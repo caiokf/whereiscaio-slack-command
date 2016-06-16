@@ -19,7 +19,9 @@ app.use(function *(){
           .last()
           .value();
 
-        ctx.body = where.Location + ', ' + where.Country;
+        ctx.body =
+          'We last saw Caio in ' +
+          where.Location + ', ' + where.Country;
 
         resolve();
       },
