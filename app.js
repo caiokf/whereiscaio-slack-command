@@ -21,7 +21,9 @@ app.use(function *(){
 
         ctx.body =
           'We last saw Caio in ' +
-          where.Location + ', ' + where.Country;
+          '*' +
+            where.Location + ', ' + where.Country +
+          '*';
 
         resolve();
       },
